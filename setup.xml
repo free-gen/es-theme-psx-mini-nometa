@@ -1,0 +1,32 @@
+<!--
+theme name:		psx-mini
+version:		1.2
+author:			frgn (free.gen)
+email:          helios.kms@gmail.com
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+--------------------------------------------	
+<!-- Choose your resolution -->	
+	<include>./layouts/1920x1080.xml</include>
+
+<!-- 
+OPTIONS: 1920x1080; 1600x900; 1366x768; 1280x720; 640x360; 480x270.
+-->
+--------------------------------------------
+<!-- Choose your help system -->	
+	<include>./layouts/help_2.xml</include> 
+
+<!-- 
+OPTIONS: help_1; help_2; help_3.
+-->
+--------------------------------------------
+<!-- Choose your body style -->	
+	<include>./layouts/s_black.xml</include>
+
+<!-- 
+OPTIONS: s_black; s_gray.
+-->	
+--------------------------------------------
+</theme>

@@ -1,0 +1,126 @@
+<!--
+theme name:		psx-mini
+version:		1.2
+author:			frgn (free.gen)
+email:          helios.kms@gmail.com
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+    <include>./setup.xml</include>
+	
+	<view name="system">
+<!--hide standart helpsystem-->
+		<helpsystem name="help">
+			<pos>2 2</pos>
+		</helpsystem>
+	</view>
+
+<!--carousel-->	
+	<feature supported="carousel">
+
+		<view name="system">
+
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<color>ffffff00</color>
+				<logoScale>1.0</logoScale>
+				<pos>0.0 0.35</pos>
+				<size>1.0 0.45</size>
+				<logoSize>0.1916 0.4259</logoSize>
+				<maxLogoCount>5</maxLogoCount>
+				<zIndex>2</zIndex>
+			</carousel>
+
+			<text name="systemInfo">
+				<backgroundColor>00000000</backgroundColor>
+				<color>ffffff</color>
+				<fontPath>./art/gamelist.ttf</fontPath>
+				<pos>0.3 0.209</pos>
+				<size>0.4 0.05</size>
+				<fontSize>0.0592</fontSize>
+				<zIndex>5</zIndex>
+			</text>
+
+		</view>
+
+	</feature>
+
+    <view name="basic, detailed, video">
+<!--hide standart helpsystem-->
+    	<helpsystem name="help">
+			<pos>2 2</pos>
+		</helpsystem>
+<!--gamelist base-->
+		<textlist name="gamelist">
+			<selectorColor>ffffff</selectorColor>
+			<selectedColor>CEAD21</selectedColor>
+			<primaryColor>cccccc</primaryColor>
+			<secondaryColor>eeeeee</secondaryColor>
+			<selectorImagePath>./art/selector.png</selectorImagePath>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/gamelist.ttf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.0592</fontSize>
+			<scrollSound>./sounds/scroll.wav</scrollSound>
+		</textlist>
+
+<!--NO-METADATA-->
+		<text name="md_description, md_developer, md_genre, md_releasedate, md_publisher, md_players, md_playcount, players_label" extra="true">
+        	<fontPath>./art/TinyUnicode.ttf</fontPath>
+        	<color>ffffff00</color>
+        	<pos>2 2</pos>
+		</text>
+<!--boxart-->
+		<image name="md_image">
+			<pos>0.77 0.558</pos>
+			<maxSize>0.23 0.38</maxSize>
+		</image>	
+<!--missing boxart-->
+		<image name="missing_art" extra="true">
+			<path>./art/missing.png</path>
+			<size>1.0 1.0</size>
+			<zIndex>2</zIndex>
+		</image>
+		<video name="md_video">
+			<pos>0.1363 0.441</pos>
+			<maxSize>0.222916 0.414814</maxSize>
+			<zIndex>5</zIndex>			
+		</video>
+<!--bg texture-->
+		<image name="bg_texture" extra="true">
+			<path>./art/texture.png</path>
+			<size>1.0 1.0</size>
+			<zIndex>1</zIndex>
+		</image>	
+<!--rating bar-->	
+		<rating name="md_rating">
+			<filledPath>./art/invisible.png</filledPath>
+			<unfilledPath>./art/invisible.png</unfilledPath>
+		</rating>
+	</view>
+
+	<view name="video">
+    	<video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<delay>2</delay>			
+		</video>
+		<image name="md_marquee">
+			<pos>2 2</pos>
+		</image>
+		<image name="md_image">
+			<pos>2 2</pos>
+		</image>
+		
+	</view>
+
+<!--SOUND BLOCK-->
+    <sound name="systemscroll">
+			<path>./sounds/scroll.wav</path>
+	</sound>
+	<sound name="launch">
+			<path>./sounds/launch.wav</path>
+	</sound>	
+</theme>

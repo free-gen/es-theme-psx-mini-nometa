@@ -1,0 +1,17 @@
+<theme>
+    <formatVersion>3</formatVersion>
+    <include>./../psx-mini.xml</include>
+	<view name="system">
+		<image name="logo">
+			<path>./carousel_logo.png</path>
+        </image>		
+	</view>
+	<view name="basic, detailed, video">
+			<image name="header" extra="true">
+                <path>./logo.png</path>
+                <size>0.170833 0.085185</size>
+                <pos>0.685 0.24</pos>
+				<zIndex>15</zIndex>
+			</image>
+	</view>
+</theme>
